@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import './home.scss';
 import { Carousel } from 'antd-mobile';
+import Prolist from '@/components/Prolist';
  
 export default class extends Component {
+
   componentDidMount () {
-    // console.log(this.props)
     this.props.getBannerlist();
+    this.props.getProlist();
   }
 
   render () {
     // console.log(this.props)
-    const { bannerlist } = this.props;
+    const { bannerlist, prolist } = this.props;
+    // console.log(prolist)
     return (
       <div className="box">
         <header className="header">
-          <i></i>
           <input type="text" placeholder="请输入您想要的商品" />
           <span>消息</span>
         </header>
@@ -28,7 +30,7 @@ export default class extends Component {
                 key={index}
                 href="http://www.alipay.com"
                 style={{ display: 'inline-block', width: '100%', height: '200px' }}>
-                <img src={`https://www.daxunxun.com${item}`}
+                <img src={item.url}
                   alt=""
                   style={{ width: '100%', verticalAlign: 'top' }} />
               </a>
@@ -40,17 +42,22 @@ export default class extends Component {
             <li>求购</li>
             <li>商城</li>
           </div>
-          <div className = "tj">
+          <div className = "recommend">
             <li>今日推荐</li>
             <li>简陋专区</li>
           </div>
           <div className = "like">
             <div className = "youlike">
+              <div className = "left"></div>
               <span>猜你喜欢</span>
+              <div className = "right"></div>
+            </div>
+            <div className = "goods">
+              <Prolist prolist = { prolist } />
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     )
   }
 }
