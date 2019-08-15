@@ -1,0 +1,40 @@
+@import '@/lib/reset.scss';
+
+.shows {
+  @include rect(75%,100%);
+  float: left;
+  .imgs {
+    @include rect(100%,.8rem);
+    background-color:#f66;
+    img{
+      @include rect(100%,100%);
+    }
+  }
+  .kind {
+    @include rect(100%,.8rem);
+    @include flexbox ();
+    @include justify-content ();
+    @include align-items ();
+
+  }
+  .lists {
+    @include rect(100%, auto);
+    li {
+      @include rect(30%,.8rem);
+      @include flexbox();
+      @include flex-direction(column);
+      margin:5px 5px 0 0;
+      float:left;
+      img{
+        background-color:#f66;
+        @include rect(100%,70%);
+      }
+      p{
+        display: block;
+        @include rect(100%,30%);
+        text-align: center;
+        overflow:hidden;
+      }
+    }
+  }
+}

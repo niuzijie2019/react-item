@@ -1,9 +1,11 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import home from '@/views/Home/store';
+import kind from '@/views/Kind/store';
 
 const reducer = combineReducers({
-  home
+  home,
+  kind
 })
 
 const store = createStore(reducer, applyMiddleware(thunk));

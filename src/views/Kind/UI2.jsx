@@ -46,8 +46,8 @@ export default class extends Component {
               <li><span>logo</span><span>agdsagadsgasdgaga</span></li>
           </div> */}
           <div className="shows">
-            <div className="imgs"><img src="http://img5.imgtn.bdimg.com/it/u=2227562010,3389156175&fm=26&gp=0.jpg" alt="" /></div>
-            <div className="kind">____品牌____</div>
+            <div className="imgs"><img src="http://img4.imgtn.bdimg.com/it/u=2431484963,226618901&fm=26&gp=0.jpg" alt="" /></div>
+            <div className="kind">____名包____</div>
             <Kind List={ list }></Kind>
           </div>
         </div>

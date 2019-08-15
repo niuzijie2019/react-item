@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import action from './action';
-import UI from './UI';
+import UI from './UI2';
 
 export default connect((state) => {
   console.log(state)

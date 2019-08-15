@@ -39,15 +39,9 @@ export default class extends Component {
               <p>其他</p>
             </NavLink>
           </ul>
-          {/* <div className="con">
-              <span>A</span>
-              <li><span>logo</span><span>agdsagadsgasdgaga</span></li>
-              <li><span>logo</span><span>agdsagadsgasdgaga</span></li>
-              <li><span>logo</span><span>agdsagadsgasdgaga</span></li>
-          </div> */}
           <div className="shows">
-            <div className="imgs"><img src="http://img5.imgtn.bdimg.com/it/u=2227562010,3389156175&fm=26&gp=0.jpg" alt="" /></div>
-            <div className="kind">____品牌____</div>
+            <div className="imgs"><img src="http://img0.imgtn.bdimg.com/it/u=396066352,2061700262&fm=26&gp=0.jpg" alt="" /></div>
+            <div className="kind">____其他____</div>
             <Kind List={ list }></Kind>
           </div>
         </div>
